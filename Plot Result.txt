@@ -1,16 +1,24 @@
-1. Plot Result and Result1 to see keefektifan dari CAT berdasarkan dari data yang kita punya: untuk jelasnya ada di file plot Result.jpg
-  - Accuracy: titik cukup rapat, berarti estimasi CAT cukup rapat dan tidak ada deviasi yang ekstrem
-  - Conditional Bias: Menunjukan bias per level kemampuan. Bias =  Estimasi-True. If under 0, so overestimate. But it above 0, so overestimate.
-  - Conditional RMSE: RMSE lebih besar di ability extreme, lebih kecil ditengah. This normal, because high information at center distribution.
-  - Exposure Rates: Ada item yang sering dipakai, namun menurun cukup smooth. Its mean no protection exposure yang kuat.
-  - Stop Rule Satisfied: Hampir semua level terpenuhi, tapi turun di ability tinggi. Artinya peserta dengan ability yang tinggi, butuh item yang lebih banyak
-  - Test length: Grafik naik diujung -> beberapa peserta tes sangat Panjang, ability yang tinggi butuh item yang lebih banyak
-  - Exposure and a Parameter: in this vertical, because set parameter "a" is 1
-  - Conditional Test Length: High ability -> test length naik. Bank item kurang sulit di ability tinggi. so CAT need more item to mencapai SE<0.3
-  - Conditional Standard Error: SE relative stabil ditengah. Naik di ability ekstrem. Its normal in CAT.
-  ** in result and result1 itu hampir sama
+1. Plot Result and Result1: These plots are used to evaluate the effectiveness of the CAT based on the available data (see Plot Result.jpg).
+    - Accuracy: The points are closely clustered around the reference line, indicating that the CAT ability estimates are accurate and there are no extreme deviations.
+    - Conditional Bias: This shows bias at each ability level. Bias is calculated as Estimated θ − True θ.
+      If the value is below 0, the model underestimates ability.
+      If the value is above 0, the model overestimates ability.
+    - Conditional RMSE: The RMSE is larger at extreme ability levels and smaller in the middle. This is normal in IRT because test information is typically highest around the center of         the ability distribution.
+    - Exposure Rates: Some items are used more frequently, but the decrease is relatively smooth. This indicates that there is no strong item exposure control implemented.
+    - Stop Rule Satisfied: The stopping rule is satisfied for most ability levels. However, the proportion decreases at higher ability levels, meaning high-ability examinees require more       items to reach the desired precision.
+    - Test Length: The graph increases at the upper end, showing that some participants receive much longer tests. High-ability examinees require more items to achieve the target               precision.
+    - Exposure and Discrimination Parameter (a): The vertical pattern occurs because the discrimination parameter (a) is fixed at 1 for all items.
+    - Conditional Test Length: Test length increases for high-ability examinees. This suggests that the item bank may not contain enough difficult items, so the CAT needs more items to         reach SE < 0.3.
+    - Conditional Standard Error: The SE is relatively stable in the middle of the ability scale and increases at extreme ability levels. This is typical behavior in CAT.
+      **Overall, Result and Result1 show very similar patterns.
 
-2. Plot Result2 - Result7 for see simulation of one participan: untuk gambar nya akan tersedia jika file "Computerized_Adavtipe_Testing" dijalankan
-  - Result2 & Result3 berdasarkan partisipan yang ke dua. Result2 berdasarkan nilai theta, dan Result3 berdasarkan respond yang ada didata
-  - Result4 & Result5 berdasarkan partisipan yang paling tinggi. Result4 berdasarkan nilai theta, dan Result5 berdasarkan respond yang ada didata
-  - Result6 & Result7 berdasarkan partisipan yang paling rendah. Result6 berdasarkan nilai theta, dan Result7 berdasarkan respond yang ada didata
+2. Plot Result2 – Result7: These plots show simulations for individual participants (the figures will appear when the file Computerized_Adaptive_Testing is executed).
+    - Result2 & Result3: Based on the second participant.
+        - Result2 uses the participant’s true theta value.
+        - Result3 uses the participant’s actual response data.
+    - Result4 & Result5: Based on the participant with the highest ability level.
+        - Result4 uses the true theta value.
+        - Result5 uses the observed response data.
+    - Result6 & Result7: Based on the participant with the lowest ability level.
+        - Result6 uses the true theta value.
+        - Result7 uses the observed response data.
