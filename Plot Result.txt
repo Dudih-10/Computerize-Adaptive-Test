@@ -1,12 +1,16 @@
-Plot Result:
-- Accuracy: titik cukup rapat, berarti estimasi CAT cukup rapat dan tidak ada deviasi yang ekstrem
-- Conditional Bias: Menunjukan bias per level kemampuan. Bias =  Estimasi-True. If under 0, so overestimate. But it above 0, so overestimate.
-- Conditional RMSE: RMSE lebih besar di ability extreme, lebih kecil ditengah. This normal, because high information at center distribution.
-- Exposure Rates: Ada item yang sering dipakai, namun menurun cukup smooth. Its mean no protection exposure yang kuat.
-- Stop Rule Satisfied: Hampir semua level terpenuhi, tapi turun di ability tinggi. Artinya peserta dengan ability yang tinggi, butuh item yang lebih banyak
-- Test length: Grafik naik diujung -> beberapa peserta tes sangat Panjang, ability yang tinggi butuh item yang lebih banyak
-- Exposure and a Parameter: in this vertical, because set parameter "a" is 1
-- Conditional Test Length: High ability -> test length naik. Bank item kurang sulit di ability tinggi. so CAT need more item to mencapai SE<0.3
-- Conditional Standard Error: SE relative stabil ditengah. Naik di ability ekstrem. Its normal in CAT.
+1. Plot Result and Result1 to see keefektifan dari CAT berdasarkan dari data yang kita punya: untuk jelasnya ada di file plot Result.jpg
+  - Accuracy: titik cukup rapat, berarti estimasi CAT cukup rapat dan tidak ada deviasi yang ekstrem
+  - Conditional Bias: Menunjukan bias per level kemampuan. Bias =  Estimasi-True. If under 0, so overestimate. But it above 0, so overestimate.
+  - Conditional RMSE: RMSE lebih besar di ability extreme, lebih kecil ditengah. This normal, because high information at center distribution.
+  - Exposure Rates: Ada item yang sering dipakai, namun menurun cukup smooth. Its mean no protection exposure yang kuat.
+  - Stop Rule Satisfied: Hampir semua level terpenuhi, tapi turun di ability tinggi. Artinya peserta dengan ability yang tinggi, butuh item yang lebih banyak
+  - Test length: Grafik naik diujung -> beberapa peserta tes sangat Panjang, ability yang tinggi butuh item yang lebih banyak
+  - Exposure and a Parameter: in this vertical, because set parameter "a" is 1
+  - Conditional Test Length: High ability -> test length naik. Bank item kurang sulit di ability tinggi. so CAT need more item to mencapai SE<0.3
+  - Conditional Standard Error: SE relative stabil ditengah. Naik di ability ekstrem. Its normal in CAT.
+  ** in result and result1 itu hampir sama
 
-** in result and result1 itu hampir sama
+2. Plot Result2 - Result7 for see simulation of one participan: untuk gambar nya akan tersedia jika file "Computerized_Adavtipe_Testing" dijalankan
+  - Result2 & Result3 berdasarkan partisipan yang ke dua. Result2 berdasarkan nilai theta, dan Result3 berdasarkan respond yang ada didata
+  - Result4 & Result5 berdasarkan partisipan yang paling tinggi. Result4 berdasarkan nilai theta, dan Result5 berdasarkan respond yang ada didata
+  - Result6 & Result7 berdasarkan partisipan yang paling rendah. Result6 berdasarkan nilai theta, dan Result7 berdasarkan respond yang ada didata
