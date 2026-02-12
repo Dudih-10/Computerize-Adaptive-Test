@@ -1,0 +1,12 @@
+Plot Result:
+- Accuracy: titik cukup rapat, berarti estimasi CAT cukup rapat dan tidak ada deviasi yang ekstrem
+- Conditional Bias: Menunjukan bias per level kemampuan. Bias =  Estimasi-True. If under 0, so overestimate. But it above 0, so overestimate.
+- Conditional RMSE: RMSE lebih besar di ability extreme, lebih kecil ditengah. This normal, because high information at center distribution.
+- Exposure Rates: Ada item yang sering dipakai, namun menurun cukup smooth. Its mean no protection exposure yang kuat.
+- Stop Rule Satisfied: Hampir semua level terpenuhi, tapi turun di ability tinggi. Artinya peserta dengan ability yang tinggi, butuh item yang lebih banyak
+- Test length: Grafik naik diujung -> beberapa peserta tes sangat Panjang, ability yang tinggi butuh item yang lebih banyak
+- Exposure and a Parameter: in this vertical, because set parameter "a" is 1
+- Conditional Test Length: High ability -> test length naik. Bank item kurang sulit di ability tinggi. so CAT need more item to mencapai SE<0.3
+- Conditional Standard Error: SE relative stabil ditengah. Naik di ability ekstrem. Its normal in CAT.
+
+** in result and result1 itu hampir sama
